@@ -5,8 +5,7 @@ def finding_percentage(student_marks,student_name):
             for marks in value:
                 sum=sum+marks
             avg_marks=sum/len(value)
-            print(f"The average of {item} is {avg_marks}")
-            break
+            return avg_marks
 
 # if __name__=="__main__":
 #     student_marks={
