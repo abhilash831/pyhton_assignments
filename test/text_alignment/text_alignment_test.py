@@ -13,6 +13,6 @@ def test_generate_logo_thickness_three():
     logo = generate_logo(3)
     lines = logo.split("\n")
     
-    assert len(lines) == 15
+    assert len(lines) == 16
     assert lines[0].strip() == "H"
     assert lines[-1].strip() == "H"

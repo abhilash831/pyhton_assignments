@@ -1,10 +1,9 @@
 import numpy
-from util import get_floor_ceil_rint
 
-def main():
-    arr = numpy.array(input().split(), float)
-    result = get_floor_ceil_rint(arr)
-    print(result)
+numpy.set_printoptions(legacy='1.13')
 
-if __name__ == '__main__':
-    main()
+def get_floor_ceil_rint(arr):
+    f = numpy.floor(arr)
+    c = numpy.ceil(arr)
+    r = numpy.rint(arr)
+    return f"{f}\n{c}\n{r}"
